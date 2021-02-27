@@ -1,0 +1,128 @@
+{
+  "uid" : "7ab6e7fdaefe8920",
+  "name" : "test_add[failed]",
+  "fullName" : "test_calc1.TestCalc#test_add",
+  "historyId" : "f305a7428b3e43f9821b8826e95ace84",
+  "time" : {
+    "start" : 1614442301775,
+    "stop" : 1614442301775,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert -0.1 == 0.3",
+  "statusTrace" : "self = <testing_calc1.test_calc1.TestCalc object at 0x0000000003836430>, get_calc = <code_calc.calc.Calculator object at 0x00000000038A45E0>, get_datas = [0.1, -0.2, 0.3]\n\n    @pytest.mark.add\n    def test_add(self, get_calc, get_datas):\n        # 实例化计算器类\n        # calc = Calculator()\n        # 调用 add 方法\n        result = get_calc.add(get_datas[0], get_datas[1])\n        # 用 isinstance 判断结果类型，用于处理浮点数运算\n        if isinstance(result, float):\n            result = round(result, 2)\n        # 得到结果之后，需要写断言\n>       assert result == get_datas[2]\nE       assert -0.1 == 0.3\n\ntest_calc1.py:44: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_datas",
+    "time" : {
+      "start" : 1614442301774,
+      "stop" : 1614442301774,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1614442301754,
+      "stop" : 1614442301754,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert -0.1 == 0.3",
+    "statusTrace" : "self = <testing_calc1.test_calc1.TestCalc object at 0x0000000003836430>, get_calc = <code_calc.calc.Calculator object at 0x00000000038A45E0>, get_datas = [0.1, -0.2, 0.3]\n\n    @pytest.mark.add\n    def test_add(self, get_calc, get_datas):\n        # 实例化计算器类\n        # calc = Calculator()\n        # 调用 add 方法\n        result = get_calc.add(get_datas[0], get_datas[1])\n        # 用 isinstance 判断结果类型，用于处理浮点数运算\n        if isinstance(result, float):\n            result = round(result, 2)\n        # 得到结果之后，需要写断言\n>       assert result == get_datas[2]\nE       assert -0.1 == 0.3\n\ntest_calc1.py:44: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4d906befd21efc4a",
+      "name" : "stdout",
+      "source" : "4d906befd21efc4a.txt",
+      "type" : "text/plain",
+      "size" : 61
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "get_datas::0",
+    "time" : {
+      "start" : 1614442301781,
+      "stop" : 1614442301782,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "add"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc1"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "CN-20190502UYEW"
+  }, {
+    "name" : "thread",
+    "value" : "16908-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_calc1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "get_datas",
+    "value" : "[0.1, -0.2, 0.3]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "add" ]
+  },
+  "source" : "7ab6e7fdaefe8920.json",
+  "parameterValues" : [ "[0.1, -0.2, 0.3]" ]
+}

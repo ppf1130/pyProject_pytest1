@@ -1,0 +1,173 @@
+{
+  "uid" : "34ced9162645652f",
+  "name" : "test_mul[failed]",
+  "fullName" : "test_calc_hw1.TestCalc#test_mul",
+  "historyId" : "f1043c65a79b52a31a023540b1882b90",
+  "time" : {
+    "start" : 1614442301690,
+    "stop" : 1614442301690,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 10 == 13",
+  "statusTrace" : "self = <testing_calc1.test_calc_hw1.TestCalc object at 0x00000000037FE310>, begin_end = None, get_calc = <code_calc.calc.Calculator object at 0x0000000003841580>, get_mul_datas = [2, 5, 13]\n\n    @allure.story(\"测试乘法\")\n    @pytest.mark.run(order=3)\n    def test_mul(self, begin_end, get_calc, get_mul_datas):\n        # 调用 mul 方法\n        with allure.step(\"计算两个数相乘\"):\n            result = get_calc.mul(get_mul_datas[0], get_mul_datas[1])\n        # 处理浮点数的运算, 四舍五入\n        if isinstance(result, float):\n            result = round(result, 3)\n        # 断言\n>       assert result == get_mul_datas[2]\nE       assert 10 == 13\n\ntest_calc_hw1.py:111: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "begin_end",
+    "time" : {
+      "start" : 1614442301382,
+      "stop" : 1614442301382,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1614442301383,
+      "stop" : 1614442301383,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "get_mul_datas",
+    "time" : {
+      "start" : 1614442301688,
+      "stop" : 1614442301688,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 10 == 13",
+    "statusTrace" : "self = <testing_calc1.test_calc_hw1.TestCalc object at 0x00000000037FE310>, begin_end = None, get_calc = <code_calc.calc.Calculator object at 0x0000000003841580>, get_mul_datas = [2, 5, 13]\n\n    @allure.story(\"测试乘法\")\n    @pytest.mark.run(order=3)\n    def test_mul(self, begin_end, get_calc, get_mul_datas):\n        # 调用 mul 方法\n        with allure.step(\"计算两个数相乘\"):\n            result = get_calc.mul(get_mul_datas[0], get_mul_datas[1])\n        # 处理浮点数的运算, 四舍五入\n        if isinstance(result, float):\n            result = round(result, 3)\n        # 断言\n>       assert result == get_mul_datas[2]\nE       assert 10 == 13\n\ntest_calc_hw1.py:111: AssertionError",
+    "steps" : [ {
+      "name" : "计算两个数相乘",
+      "time" : {
+        "start" : 1614442301690,
+        "stop" : 1614442301690,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "begin_end::0",
+    "time" : {
+      "start" : 1614442301746,
+      "stop" : 1614442301746,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "get_mul_datas::0",
+    "time" : {
+      "start" : 1614442301697,
+      "stop" : 1614442301697,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试计算器"
+  }, {
+    "name" : "story",
+    "value" : "测试乘法"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=3)"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc_hw1"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "CN-20190502UYEW"
+  }, {
+    "name" : "thread",
+    "value" : "16908-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_calc_hw1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "get_mul_datas",
+    "value" : "[2, 5, 13]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "run(order=3)" ]
+  },
+  "source" : "34ced9162645652f.json",
+  "parameterValues" : [ "[2, 5, 13]" ]
+}
